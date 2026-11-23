@@ -1,0 +1,12 @@
+[
+  {"name": "Mr. Perera", "net_worth_usd": 25000000, "tier": "black", "email": "perera@example.com", "city": "Colombo"},
+  {"name": "Mrs. Jayasinghe", "net_worth_usd": 8500000, "tier": "platinum", "email": null, "city": "Kandy"},
+  {"name": "Dr. Wickramasinghe", "net_worth_usd": 3200000, "tier": "gold", "email": "dr.w@example.com", "city": "Galle"},
+  {"name": "X", "net_worth_usd": 1500000, "tier": "gold", "email": null, "city": "Negombo"},
+  {"name": "Mr. Rajapaksha", "net_worth_usd": 12000000, "tier": "platinum", "email": "raja@example.com", "city": "Colombo"},
+  {"name": "Ms. de Silva", "net_worth_usd": 2750000, "tier": "gold", "email": "desilva@example.com", "city": "Colombo"},
+  {"name": "Mr. Silva", "net_worth_usd": -400000, "tier": "gold", "email": null, "city": "Matara"},
+  {"name": "Mr. Gunawardena", "net_worth_usd": 41000000, "tier": "black", "email": "guna@example.com", "city": "Nuwara Eliya"},
+  {"name": "Ms. Fernando", "net_worth_usd": 6000000, "tier": "diamond", "email": "fernando@example.com", "city": "Colombo"},
+  {"name": "Mr. Bandara", "net_worth_usd": 9100000, "tier": "platinum", "email": "bandara@example.com", "city": "Kurunegala"}
+]

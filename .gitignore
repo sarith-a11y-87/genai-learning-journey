@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Secrets - NEVER commit these
+.env
+*.key
+
+# Generated output from exercises
+**/output/
+report.json
+
+# Local data you don't want public (vector DBs, downloaded models, real documents)
+data/private/
+*.sqlite
+*.db
+chroma/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

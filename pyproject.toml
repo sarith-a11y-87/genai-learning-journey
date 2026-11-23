@@ -1,0 +1,48 @@
+[project]
+name = "genai-learning-journey"
+version = "0.1.0"
+description = "6-month learning path: Python for AI, Generative AI, RAG, AI agents and agentic AI"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "Sarith Ranathunge" }]
+dependencies = [
+    # Phase 0: Python for AI
+    "pydantic>=2.7",
+    "pydantic-settings>=2.3",
+    "python-dotenv>=1.0",
+    "httpx>=0.27",
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "ollama>=0.4",
+    # Later phases add their own packages with `uv add <name>`, e.g.
+    # Phase 1: anthropic, openai, tiktoken
+    # Phase 2: psycopg[binary], pgvector, llama-index, ragas
+    # Phase 3: langgraph, smolagents, mcp
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+    "mypy>=1.11",
+]
+
+[tool.uv]
+# This repo is a collection of learning folders, not an installable package.
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["phase0-python-for-ai", "phase1-genai-foundations", "phase2-rag", "phase3-agents", "phase4-agentic-systems", "phase5-advanced"]
+addopts = "-q --import-mode=importlib"
+filterwarnings = ["ignore:Using `httpx` with `starlette.testclient`"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
