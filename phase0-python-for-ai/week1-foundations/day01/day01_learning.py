@@ -105,15 +105,15 @@
 # empty_set = set()
 
 # Dictionaries
-student = {
-    "name": "Bobby",
-    "age": 20,
-    "courses": ["Python", "Java", "C++"]
-}
-student['age'] = 21
-print(student)
-print(student['age'])
-print(student.get('hello', 'not found'))
+# student = {
+#     "name": "Bobby",
+#     "age": 20,
+#     "courses": ["Python", "Java", "C++"]
+# }
+# student['age'] = 21
+# print(student)
+# print(student['age'])
+# print(student.get('hello', 'not found'))
 
 # del student['age']
 # age = student.pop('name')
@@ -123,5 +123,5 @@ print(student.get('hello', 'not found'))
 # print(student.values())
 # print(student.items())
 
-for key, value in student.items():
-    print(key, value)
+# for key, value in student.items():
+#     print(key, value)
